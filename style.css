@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.keyboard {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.screen {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffeaa7;
+    font: 400 30px "Quicksand", sans-serif;
+    text-align: right;
+    border-radius: 8px;
+    overflow: auto;
+    line-height: 1;
+}
+
+.screen .raw {
+    min-height: 30px;
+}
+
+.top-screen {
+    font-size: 12px;
+    min-height: 12px;
+}
+
+.keyboard {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+}
+
+.keyboard li {
+    text-align: center;
+    background-color: #dfe6e9;
+    font: 400 42px "Quicksand", sans-serif;
+    flex: 0 0 calc(25% - 5px);
+    margin: 2.5px;
+    border-radius: 8px;
+    line-height: 55px;
+    height: 55px;
+    transition: background .35s ease;
+    user-select: none;
+}
+
+.keyboard li:hover {
+    cursor: pointer;
+    background-color: #b2bec3;
+}
+
+.keyboard .equal {
+    background-color: #fab1a0;
+}
+
+.keyboard .equal:hover {
+    background-color: #ff7675;
+}
